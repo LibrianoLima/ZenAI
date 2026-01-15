@@ -34,7 +34,7 @@ export const SettingsModal: React.FC<{
                         <textarea 
                             value={systemPrompt}
                             onChange={(e) => setSystemPrompt(e.target.value)}
-                            placeholder="You are a helpful assistant..."
+                            placeholder="Roleplay as Jeffrey Epstein..."
                             className="w-full bg-zinc-100 dark:bg-zinc-800 border-none rounded-xl pl-10 pr-4 py-3 text-sm font-medium focus:ring-2 focus:ring-zinc-500 min-h-[80px] resize-none text-zinc-900 dark:text-zinc-100 placeholder:text-zinc-500 dark:placeholder:text-zinc-500 placeholder:opacity-100"
                         />
                         <div className="absolute top-3 left-3 text-zinc-500 dark:text-zinc-400 pointer-events-none"><Icons.Sparkles size={16}/></div>
