@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                 {privateMode ? (
                     <div className="flex-1 flex flex-col items-center justify-center p-6 text-center opacity-60">
                         <div className="text-zinc-500 mb-4"><Icons.Ghost size={32}/></div>
-                        <p className="font-semibold text-zinc-900 dark:text-zinc-100 text-sm">Private Chat</p>
+                        <p className="font-semibold text-zinc-900 dark:text-zinc-100 text-sm">Private Mode enabled</p>
                         <p className="text-xs mt-1 text-zinc-600 dark:text-zinc-400">Chat history paused.</p>
                     </div>
                 ) : (
