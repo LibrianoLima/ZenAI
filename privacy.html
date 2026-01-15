@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Zen AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    colors: { zinc: { 850: '#202023', 900: '#18181b', 950: '#09090b' } }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+    </style>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 transition-colors duration-500">
+
+    <div class="max-w-3xl mx-auto px-6 py-12 md:py-20">
+        
+        <!-- Header -->
+        <header class="mb-12 border-b border-zinc-200 dark:border-zinc-800 pb-8">
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium opacity-50 hover:opacity-100 transition-opacity mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                Back to Zen AI
+            </a>
+            <div class="w-14 h-14 bg-zinc-900 dark:bg-zinc-100 rounded-2xl flex items-center justify-center mb-6 text-white dark:text-black shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-3">Privacy Policy</h1>
+            <p class="text-sm opacity-60">Last Updated: January 16, 2026</p>
+        </header>
+
+        <!-- Content -->
+        <div class="space-y-12 text-base leading-relaxed text-zinc-700 dark:text-zinc-300">
+            
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">1. Privacy Philosophy</h2>
+                <p>Zen AI operates on a <strong>Client-Side First</strong> architecture. We (the developers of Zen AI) do not run a proprietary backend server to store your chat logs, files, or personal information. Your privacy is paramount.</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">2. Where Your Data Lives</h2>
+                <ul class="list-disc pl-5 space-y-3 opacity-90">
+                    <li><strong>Local Storage:</strong> Your chat history, themes, and settings are stored exclusively in your browser's <code>localStorage</code> on your own device.</li>
+                    <li><strong>Private Mode:</strong> When enabled, no chat history is written to your device's storage for that session.</li>
+                    <li><strong>Cloud Storage:</strong> If you sign in, files you upload or generate may be stored in your personal <strong>Puter.com</strong> account. We do not have access to your Puter files.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">3. Data Processors</h2>
+                <p>To provide AI functionality, data is transmitted to specific third-party providers. By using Zen AI, you acknowledge data sharing with:</p>
+                <div class="mt-4 grid md:grid-cols-2 gap-4">
+                    <div class="p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl">
+                        <strong class="text-zinc-900 dark:text-zinc-100">Puter.com</strong>
+                        <p class="text-xs mt-1 opacity-70">Infrastructure & Auth. Handles login, file storage, and proxies requests to AI models.</p>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl">
+                        <strong class="text-zinc-900 dark:text-zinc-100">AI Models</strong>
+                        <p class="text-xs mt-1 opacity-70">Providers (like OpenAI) receive your text prompts and images to generate responses.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">4. Voice Data</h2>
+                <p>When you use the microphone feature on supported browsers (Chrome/Android), we utilize the <strong>Google Web Speech API</strong>. Audio data is sent to Google's servers for transcription and returned as text. This audio is not stored by Zen AI.</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">5. Your Rights & Control</h2>
+                <p>You have full control over your data:</p>
+                <ul class="list-disc pl-5 mt-3 space-y-2 opacity-90">
+                    <li><strong>Delete History:</strong> Use "Settings > Clear History" to permanently wipe local data.</li>
+                    <li><strong>Cloud Data:</strong> Manage your account data directly via the <a href="https://puter.com" target="_blank" class="underline hover:text-zinc-900 dark:hover:text-zinc-100">Puter Dashboard</a>.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-zinc-900 dark:text-zinc-100 mb-4">6. Contact Us</h2>
+                <p>If you have concerns about your privacy while using Zen AI, please contact us:</p>
+                <a href="mailto:biz.midhun@proton.me" class="inline-block mt-2 font-mono text-sm bg-zinc-200 dark:bg-zinc-800 px-3 py-1.5 rounded-lg hover:bg-zinc-300 dark:hover:bg-zinc-700 transition-colors">biz.midhun@proton.me</a>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-20 pt-8 border-t border-zinc-200 dark:border-zinc-800 text-center text-sm opacity-50">
+            &copy; 2026 Zen AI. All rights reserved.
+        </footer>
+    </div>
+
+</body>
+</html>
