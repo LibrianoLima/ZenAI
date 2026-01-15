@@ -459,7 +459,7 @@ function App() {
             {/* Drag Overlay */}
             {isDragging && (
                 <div className="fixed inset-0 z-[100] bg-zinc-900/80 backdrop-blur-sm flex items-center justify-center border-4 border-dashed border-zinc-500 m-4 rounded-3xl animate-fade-in pointer-events-none">
-                    <div className="text-white text-2xl font-bold flex flex-col items-center gap-4"><Icons.Download size={48} /> Drop files to attach</div>
+                    <div className="text-white text-2xl font-bold flex flex-col items-center gap-4"><Icons.Download size={48} /> Drag and Drop Attachments</div>
                 </div>
             )}
 
@@ -581,20 +581,25 @@ function App() {
                         <button onClick={() => setInfoOpen(false)} className="absolute top-5 right-5 opacity-50 hover:opacity-100"><Icons.X size={20}/></button>
                         <div className="w-16 h-16 bg-zinc-100 dark:bg-zinc-800 rounded-full flex items-center justify-center mx-auto mb-4"><Icons.YinYang size={32} className="opacity-80"/></div>
                         <h2 className="text-xl font-bold mb-1">Zen AI</h2>
-                        <p className="text-sm opacity-60 mb-6">Refactored Version</p>
+                        <p className="text-sm opacity-60 mb-6">Designed by Midhun</p>
                         
                         <div className="grid grid-cols-2 gap-3 mb-6">
                             {['GitHub', 'LinkedIn', 'Bluesky', 'Email'].map(l => (
-                                <a key={l} href="#" className="flex items-center justify-center gap-2 py-3 bg-zinc-100 dark:bg-zinc-800 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-700 transition font-medium text-xs">
-                                    {l === 'GitHub' && <Icons.Github size={16}/>}
-                                    {l === 'LinkedIn' && <Icons.Linkedin size={16}/>}
-                                    {l === 'Bluesky' && <Icons.Bluesky size={16}/>}
-                                    {l === 'Email' && <Icons.EmailEnvelope size={16}/>}
+                                <a key={l} 
+                                   href={l === 'GitHub' ? 'https://github.com/MidhunEU' : l === 'LinkedIn' ? 'https://linkedin.com/in/your-profile' : l === 'Bluesky' ? 'https://bsky.app/profile/your-handle' : 'mailto:you@email.com'}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="flex items-center justify-center gap-2 py-3 bg-zinc-100 dark:bg-zinc-800 rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-700 transition font-medium text-xs"
+                                    >
+                                    {l === 'GitHub' && <Icons.Github size={16} />}
+                                    {l === 'LinkedIn' && <Icons.Linkedin size={16} />}
+                                    {l === 'Bluesky' && <Icons.Bluesky size={16} />}
+                                    {l === 'Email' && <Icons.EmailEnvelope size={16} />}
                                     {l}
                                 </a>
-                            ))}
+                ))}
                         </div>
-                        <div className="mt-4 text-[10px] opacity-40 uppercase tracking-widest">v2.1.4 &bull; Powered by Puter.js</div>
+                        <div className="mt-4 text-[10px] opacity-40 uppercase tracking-widest">Last updated on Jan 15, 2026</div>
                     </div>
                 </div>
             )}
