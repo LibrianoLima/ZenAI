@@ -584,7 +584,7 @@ function App() {
                         <p className="text-sm opacity-60 mb-6">Designed by Midhun</p>
                         
                         <div className="grid grid-cols-2 gap-3 mb-6">
-                            {['GitHub', 'LinkedIn', 'Bluesky', 'Email'].map(l => (
+                            {['GitHub', 'LinkedIn', 'Bluesky', 'Contact'].map(l => (
                                     <a key={l} 
                                     href={l === 'GitHub' ? 'https://github.com/MidhunEU' : l === 'LinkedIn' ? 'https://linkedin.com/in/MidhunEU' : l === 'Bluesky' ? 'https://bsky.app/profile/midhuneu.bsky.social' : 'mailto:biz.midhun@proton.me'}
                                     target="_blank"
@@ -594,7 +594,7 @@ function App() {
                                     {l === 'GitHub' && <Icons.Github size={16} />}
                                     {l === 'LinkedIn' && <Icons.Linkedin size={16} />}
                                     {l === 'Bluesky' && <Icons.Bluesky size={16} />}
-                                    {l === 'Contact' && <Icons.EmailEnvelope size={16} />}
+                                    {l === 'Email' && <Icons.EmailEnvelope size={16} />}
                                     {l}
                                     </a>
                         ))}
