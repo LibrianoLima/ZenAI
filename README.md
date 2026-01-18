@@ -30,8 +30,8 @@ A minimalist, multimodal AI assistant powered by [Puter.js](https://docs.puter.c
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/zen-ai.git
-    cd zen-ai
+    git clone https://github.com/MidhunEU/zenai.git
+    cd zenai
     ```
 
 2.  **Install dependencies**
@@ -56,7 +56,7 @@ The output will be in the `dist` directory.
 
 ## Deployment
 
-This project is optimized for **Cloudflare Pages**, **Vercel**, or **Puter.com** hosting.
+This project is primarily optimized for **Cloudflare Pages**, it should also work with other providers.
 
 ## License
 
